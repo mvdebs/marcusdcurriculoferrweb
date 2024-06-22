@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{                                     /* Definição de class container e display do tipo grid*/
+            display: grid;
+        }
+        header{
+            grid-column-start: 1;                       /* Definindo o estilo do <header>. 10 colunas e background cinza*/
+            grid-column-end: 10;
+            background-color: rgb(115, 115, 115);
+        }
+        .menu{                                          /* Definindo menu centralizado e justificado com gap de 20px entre colunas */
+            grid-column-start: 3;
+            grid-column-end: 8;
+            justify-content: center;
+            gap: 20px;
+            font-size: large;
+        }
+        .imagem_Marcus {                /* Definindo o espaço ocupado pela imagem utilizada no <aside> */
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        img{                            /* Definindo borda para a imagem adcionada */
+            border-radius: 10px;
+            border: 5px ridge;
+        }
+        .principal{                     /* Definindo espaço ocupado no grid, espaçamento padding e fonte utilizada*/
+            grid-column-start: 3;
+            grid-column-end: 10;
+            padding-left: 25px;
+            padding-right: 25px;
+            text-align: justify;
+            font-size: large;
+        }
+        footer{                         /* Definindo o rodapé de acordo com o título */
+            grid-column-start: 1;
+            grid-column-end: 10;
+            background-color: rgb(115, 115, 115);
+        }
+        ul{                                 /* Padronizando lista sem marcadores e atribuindo cor da fonte*/
+            list-style-type: none;
+            color: blue;
+        }
+        a:link {                            /* Atribuindo estilo para links com espaçamento e borda */
+            text-decoration: none;
+            padding: 8px 12px;
+            border: solid #506E6A 1px;
+        }
+        li{                                 /* Definindo para que a lista se apresente na forma horizontal */
+            float: left;
+        }
+        table{                              /* Espaçamento interno para tabelas */
+            padding: 2px;
+        }
+        @media only screen and (max-width: 767px) {     /* Media query utilizada para adequar a página em dispositivos móveis */
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+            .imagem_Marcus {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Currículo - Marcus Vinícius da Silva Debon</h1>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="Formação.html">Formação</a></li>
+            <li><a href="Portfólio.html">Portfólio</a></li>
+            <li><a href="Index.html">Sobre mim</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_Marcus">
+            <img src="euparque.jpg">
+            <div class="infos">
+                <p><strong>Data do Nascimento:</strong> 11/01/1988</p>
+                <p><strong>Ocupação:</strong> Funcionário Público</p>
+            </div>
+        </aside>
+        <section class="principal">
+        <h2>Cursos de Formação</h2>
+        <table  width="100%" border="1px">
+            <tr>
+                <th style="font-size: x-large;">Curso</th>
+                <th style="font-size: x-large;">Instituição</th>
+                <th style="font-size: x-large;">Período</th>
+            </tr>
+            <tr>
+                <td>2º Grau completo</td>
+                <td>Colégio Técnico da Fundação José Carvalho</td>
+                <td>2002 a 2005</td>
+            </tr>
+            <tr>
+                <td>Curso Técnico de Mecânico de Usinagem</td>
+                <td>Senai Nilo Peçanha</td>
+                <td>2007 a 2008</td>
+            </tr>
+            <tr>
+                <td>Curso Técnico de Centro de Usinagem</td>
+                <td>Senai Nilo Peçanha</td>
+                <td>2009</td>
+            </tr>
+            <tr>
+                <td>Inglês intermediário - II</td>
+                <td>Universidade de Caxias do Sul</td>
+                <td>2009 a 2012</td>
+            </tr>
+            <tr>
+                <td>Graduação em Engenharia Mecânica</td>
+                <td>Universidade de Caxias do Sul</td>
+                <td>2006 a 2013</td>
+            </tr>
+            <tr>
+                <td>Cursando Tecnólogo em Análise e Desenvolvimento de Sistemas</td>
+                <td>Uninter</td>
+                <td>2022...</td>
+            </tr>
+        </table>
+        <br>
+        Possuo outras formações entre cursos de desenvolvimento pessoal na área de finanças pessoais, investimentos e de psicologia das
+        relações humanas por achar importante, além da parte técnica relacionada ao serviço prestado, saber como se relacionar com as
+        pessoas e conforme a situação apresentada, tentar tomar a melhor decisçao com base também na experiência de vida.
+        </section>
+    </div>
+    <footer class="container">
+        <h1 style="color: white; text-align: center;">Desenvolvido para fins educacionais</h1>
+    </footer>
+    </div>
+</body>
+</html>
